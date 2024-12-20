@@ -1,0 +1,16 @@
+:root {
+    --highlight: #1e90ff; /* Azul con un toque ligero de verde */
+    --highlight-hover: #1b82e6;
+    --highlight-active: #43dabe; /* Azul verdoso para el enlace activo */
+
+    --text-light: #e9e9e9; /* Blanco grisáceo */
+    --text-medium: #cfcfcf; /* Gris claro */
+    --text-dark: #adb5bd; /* Gris medio */
+
+    --bg-light: #212529; /* Gris oscuro casi negro */
+    --bg-medium: #181a1c; /* Gris más oscuro */
+    --bg-dark: #121314; /* Gris casi negro */
+
+    --font-size: 18px; /* Tamaño de fuente predeterminado */
+    --font-family: Arial, sans-serif; /* Tipo de fuente predeterminado */
+}

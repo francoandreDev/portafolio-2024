@@ -1,0 +1,90 @@
+/* home.css */
+
+/*? Utils*/
+
+.mr-4 {
+    margin-right: 4px;
+}
+
+.ml-4 {
+    margin-left: 4px;
+}
+
+/* Contenedor Principal */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+/* Introducción */
+.intro {
+    max-width: 600px;
+    text-align: left;
+}
+
+.intro h1 {
+    color: var(--highlight);
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.intro .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    scale: 0.97;
+    transition: background-color 0.3s ease, scale 0.2s ease;
+}
+
+.intro .button:hover {
+    background-color: var(--highlight-hover);
+    scale: 1;
+}
+
+.intro .button.primary {
+    background-color: var(--highlight);
+    color: #fff;
+
+    &:hover {
+        background-color: var(--text-light);
+        color: var(--highlight); 
+    }
+}
+
+/* Imagen */
+.image {
+    max-width: 300px;
+    flex-shrink: 0;
+    margin-right: 3em;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .home {
+        text-align: center;
+    }
+
+    .image img {
+        width: 200px;
+    }
+}

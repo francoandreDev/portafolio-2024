@@ -1,0 +1,59 @@
+/* Sección de configuraciones */
+.settings-section {
+    background-color: var(--bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+/* Contenedor del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Estilo para las etiquetas */
+label {
+    color: var(--text-light);
+    font-size: var(--font-size);
+    margin-bottom: 5px;
+}
+
+/* Estilo para los elementos de selección (select) */
+select {
+    background-color: var(--bg-medium);
+    color: var(--text-light);
+    padding: 8px;
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+    font-size: var(--font-size);
+    width: 100%; /* Hacer que los selects ocupen todo el ancho disponible */
+}
+
+/* Asegurarnos de que los selects no se desborden */
+select:focus {
+    border-color: var(--highlight-active);
+    outline: none;
+}
+
+/* Añadir un efecto hover para los select */
+select:hover {
+    background-color: var(--bg-dark);
+}
+
+/* Estilo para los elementos en dispositivos pequeños */
+@media (max-width: 600px) {
+    .settings-section {
+        padding: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    select {
+        font-size: 0.9rem;
+    }
+}

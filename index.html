@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="src/styles/variables.css">
+        <link rel="stylesheet" href="/src/styles/index.css" />
+        <link rel="stylesheet" id="currentStyle" href="" />
+        <script type="module" src="/src/utils/load.js" defer></script>
+        <script type="module" src="/src/libs/changePage.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="active">
+                    <a href="#" data-page="home">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="#" data-page="projects">
+                        <i class="fa-solid fa-laptop"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="#" data-page="contactme">
+                        <i class="fa-regular fa-address-book"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="#" data-page="settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </button>
+            </nav>
+        </header>
+
+        <main id="content"></main>
+        <footer>
+            <p id="year">©</p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/e00d06d5d7.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    </body>
+</html>

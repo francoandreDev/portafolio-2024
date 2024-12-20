@@ -1,0 +1,102 @@
+/* projects.css */
+
+/* Estilos generales */
+p {
+    margin-bottom: 30px;
+    padding-left: 5rem;
+}
+
+/* Contenedor principal con grid responsivo */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de las cards */
+.card {
+    perspective: 1000px;
+    aspect-ratio: 4/3;
+    min-height: 15em;
+    cursor: pointer;
+    transition: scale 0.2s ease-in-out;
+    scale: 0.95;
+    &:hover {
+        scale: 1;
+    }
+}
+
+/* Estilo de la tarjeta interna para aplicar el flip */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Cuando se aplica la clase .flipped */
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Estilo de las caras de la tarjeta */
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover {
+        box-shadow: inset 0 0 5px 5px var(--bg-light), 0 0 1px 1px var(--highlight);
+    }
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo para la parte trasera */
+.card-back {
+    padding: 20px;
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotateY(180deg);
+}
+
+.card-back h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card-back p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-back a {
+    color: var(--highlight);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card-back a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
