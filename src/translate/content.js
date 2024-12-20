@@ -15,6 +15,7 @@ export const content = {
             "adjusting to the needs and the role assigned to me within the team.",
         homeCv: "Download My CV",
         homeContactme: "Contact me!",
+        linkCV: "/assets/pdfs/CV - Franco André Calmette Miyazawa -en.pdf",
         //? contenido de la ruta projects
         projectsTitle: "Projects",
         //? contenido de la ruta contactme
@@ -66,6 +67,7 @@ export const content = {
             "ajustándome a las necesidades y al rol que se me asigne dentro del equipo.",
         homeCv: "Descargar Mi CV",
         homeContactme: "Contáctame",
+        linkCV: "/assets/pdfs/CV - Franco André Calmette Miyazawa.pdf",
         //? contenido de la ruta projects
         projectsTitle: "Proyectos",
         //? contenido de la ruta contactme

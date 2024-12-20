@@ -20,6 +20,11 @@ export function translateText(key) {
     return content[language][key];
 }
 
+export function translateHref(element, key) {
+    const language = sessionStorage.getItem("language") || "en"
+    element.href = content[language][key]
+}
+
 export function loadConfiguration() {
     // Revisa si hay alguna configuración previa guardada para aplicarla
     const language = sessionStorage.getItem("language");

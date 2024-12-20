@@ -1,4 +1,5 @@
-import { changeLanguageElement } from "../utils/load.js";
+import { changeLanguageElement, translateHref } from "../utils/load.js";
+
 import { dinamicNav } from "../libs/changePage.js";
 
 dinamicNav();
@@ -20,3 +21,6 @@ const elementosContenido = {
 Object.entries(elementosContenido).forEach(([key, element]) => {
     changeLanguageElement(element, key);
 });
+
+const linkCV = document.getElementById("home-cv")
+translateHref(linkCV, "linkCV")
